@@ -1,0 +1,24 @@
+<table class="table" ng-controller="Hotels">
+    <tr>
+        <th></th>
+        <th>Foto</th>
+        <th>Nombre</th>
+        <th>Categoría</th>
+        <th>Descripción</th>
+        <th>Destacado</th>
+        <th></th>
+    </tr>
+    <tr ng-repeat="hotel in hotels">
+        <td><a href="details/{{hotel.Id}}">Ver detalle</a></td>
+        <td>
+            <div class="hotel-bubble">
+                <img ng-src="images/{{hotel.foto}}" alt={{hotel.Nombre}}/>
+            </div>
+        </td>
+        <td>{{hotel.Nombre}}</td>
+        <td><img class="star" ng-repeat="x in [].constructor(hotel.Categoria) track by $index" src="images/star.png" /></td>
+        <td>{{hotel.Descripcion}}</td>
+        <td>{{(hotel.Destacado)?'Si':'No'}}</td>
+        <td><a ng-click="sendDestacado(hotel.Id, !hotel.Destacado)" >{{(hotel.Destacado)?'Desmarcar':'Marcar'}}</a></td>
+    </tr>
+</table>

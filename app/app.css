@@ -1,0 +1,92 @@
+/* app css stylesheet */
+
+a {
+  text-decoration: none;
+  color: brown;
+  cursor: pointer;
+}
+
+a:hover {
+  color: burlywood;
+}
+
+body {
+  background: floralwhite;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.table {
+  margin: 0 auto;
+  margin-top: 40px;
+  border-collapse: collapse;
+  text-align: center;
+}
+.table th {
+  padding: 10px;
+  color: chocolate;
+}
+.table td {
+  padding: 6px 20px;
+  border: 1px solid chocolate;
+  background-color: blanchedalmond;
+  max-width: 800px;
+  line-height: 1.4;
+}
+
+.hotel-bubble {
+  width: 60px;
+  height: 60px;
+  background: white;
+  overflow: hidden;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hotel-bubble img {
+  height: 50px;
+  width: 50px;
+}
+
+.star {
+  height: 15px;
+  width: 15px;
+  margin: 0 3px;
+}
+
+.responsive-img {
+  width: 200px;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+.responsive-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

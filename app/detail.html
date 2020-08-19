@@ -1,0 +1,18 @@
+<table class="table" ng-controller="HotelDetails">
+  <tr>
+      <th>Imagen</th>
+      <th>Ciudad</th>
+      <th>Descripcion</th>
+      <th>Caracteristicas</th>
+  </tr>
+  <tr ng-repeat="hotel in hoteldetails">
+      <td>
+        <div class="responsive-img">
+          <img ng-src="images/{{hotel.Imagen}}" alt={{hotel.Ciudad}}/>
+        </div>
+      </td>
+      <td>{{hotel.Ciudad}}</td>
+      <td>{{hotel.Descripcion}}</td>
+      <td>{{hotel.Caracteristicas}}</td>
+  </tr>
+</table>
