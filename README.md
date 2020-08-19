@@ -5,11 +5,7 @@ Cliente Front-End encargado de consumir la web api.
 
 ### Pre-requisitos
 
-_Debes tener montadas y lanzadas tanto la base de datos SQL Server como la Web Api .NET antes de lanzar la web. _
-
-```
-Da un ejemplo
-```
+_Debes tener montadas y lanzadas tanto la base de datos SQL Server como la Web Api .NET antes de lanzar la web._
 
 ### Iniciar
 
@@ -23,4 +19,4 @@ npm start
 ```
 
 ---
-Por [Miguel Puertas](https://github.com/Villanuevand) 😊
+Por [Miguel Puertas Alés](https://github.com/byempy)
